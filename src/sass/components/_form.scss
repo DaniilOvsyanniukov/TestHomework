@@ -1,0 +1,51 @@
+.createInvoice {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .form {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-gap: 1em;
+
+    .button {
+      justify-self: end;
+    }
+  }
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+
+    border: 2px solid $color-title;
+    padding: 15px;
+
+    .form-label {
+      display: flex;
+      flex-direction: column;
+    }
+    input {
+      border: 2px solid $color-title;
+      border-radius: 3px;
+      outline: none;
+      height: 35px;
+    }
+    input:focus {
+      color: #000000;
+      border: 2px solid $color-accent;
+    }
+    .comment {
+      grid-column: 1/3;
+      grid-row: 3;
+    }
+    .textarea-comment {
+      border: 2px solid $color-title;
+      border-radius: 3px;
+      outline: none;
+      height: 70px;
+    }
+  }
+}

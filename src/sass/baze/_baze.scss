@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-primary-background;
+  color: $color-primary-text;
+  font-family: 'Roboto', sans-serif;
+  @include font();
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h2 {
+  @include font($fw: 700);
+}
+li {
+  list-style-type: none;
+}
+
+.text {
+  color: $color-primary-text;
+  @include font($fw: 400);
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background-color: $color-secondary-background;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 1px rgba(0, 0, 0, 0.14);
+  border-radius: 3px;
+  width: 1200px;
+  padding: 20px 20px;
+}
+
+.invisible {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+
+  min-width: 100px;
+
+  background-color: $color-accent;
+  color: $color-secondary-text;
+
+  @include font($fs: 14px, $lh: 1.875, $ls: 0.06em);
+
+  cursor: pointer;
+}

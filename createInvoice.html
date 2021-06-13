@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./src/sass/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="global-title">Create Invoice</h1>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <section class="createInvoice">
+            <div class="container">
+                <form class="form">
+                    <div class="form-container">
+                    <label class="form-label">
+                        <span class="label-title">Number:</span>
+                        <input class="number" type="number" name="number" required>
+                    </label>
+                    <label class="form-label" >
+                        <span class="label-title">Invoice Date:</span>
+                        <input class="invoice-date" type="date" name="date_created" placeholder="Select date" required>
+                    </label>
+                    <label class="form-label">
+                        <span class="label-title">Supply Date:</span>
+                        <input class="supply-date" type="date" name="date_supplied" placeholder="Select date" required>
+                    </label>
+                    <label class="form-label comment">
+                        <span class="label-title">Comment:</span>
+                        <textarea class="textarea-comment" name="comment" maxlength="160"></textarea>
+                    </label>
+                    </div>
+                    <a href="#" class="button">Save</a>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/addInvoices.js"></script>
+</body>
+
+</html>

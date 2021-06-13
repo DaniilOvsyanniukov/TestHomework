@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./src/sass/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="global-title">Invoices</h1>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <section class="actions">
+            <div class="container">
+                <h2>Actions</h2>
+                <a class="button" href="./createInvoice.html">Add new</a>
+            </div>
+
+        </section>
+        <section class="invoices">
+            <div class="container">
+                <h2>Invoices</h2>
+                <ul class="column-name">
+                    <li class="column-item">Create</li>
+                    <li class="column-item">No</li>
+                    <li class="column-item">Supply</li>
+                    <li class="column-item">Comment</li>
+                </ul>
+                <div class="invoiceContainer js-invoice-container">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/main.js" type="module"></script>
+</body>
+</html>

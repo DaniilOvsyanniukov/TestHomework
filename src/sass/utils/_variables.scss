@@ -1,0 +1,13 @@
+$color-title: #AFB1B8;
+$color-primary-text: #212121;
+$color-secondary-text: #FFFFFF;
+$color-primary-background: #F5F4FA;
+$color-secondary-background: #FFFFFF;
+$color-accent: #2196F3;
+
+@mixin font ($fw:700, $fs:14px, $lh:1.71, $ls:0.03em){
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

@@ -1,0 +1,38 @@
+.invoices {
+  .container {
+    margin-bottom: 0;
+  }
+
+  .column-name {
+    display: flex;
+    margin: 10px;
+    padding: 15px 15px;
+    color: $color-title;
+    border-radius: 4px;
+    background-color: $color-primary-background;
+
+    .column-item {
+      width: calc((100% -90px) / 4);
+    }
+    .column-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .list {
+    display: flex;
+    margin: 10px;
+    padding: 15px 15px;
+    color: $color-title;
+    @include font($fw: 150, $fs: 12px, $lh: 1.71, $ls: 0.03em);
+    .list-item {
+      width: calc((100% -90px) / 4);
+    }
+    .list-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .invoiceContainer {
+    border-bottom: 2px solid $color-title;
+  }
+}
